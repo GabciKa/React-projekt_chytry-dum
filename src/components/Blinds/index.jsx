@@ -3,7 +3,7 @@ import  "./style.css"
 import blindsOpen from "./img/blinds-open.svg";
 import blindsClosed from "./img/blinds-closed.svg";
 
-const Blinds = () => {
+const Blinds = ({state}) => {
     return (
         <div className="blinds">
             <div className="blinds__icon">
