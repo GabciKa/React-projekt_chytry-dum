@@ -6,11 +6,12 @@ import Climate from "../Climate";
 import Blinds from "../Blinds";
 import Energy from "../Energy";
 
-const Dashboard = ({smartHomeData}) => {
+
+const Dashboard = ({data}) => {
     return (
-        <main class="dashboard">
-            <Lights lights={smartHomeData.lights}/>
-            <Climate />
+        <main className="dashboard">
+            <Lights lights={data.lights}/>
+            <Climate climate={data.climate}/>
             <Blinds />
             <Energy />
         </main>

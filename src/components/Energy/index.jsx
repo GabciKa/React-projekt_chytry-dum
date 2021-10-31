@@ -1,26 +1,28 @@
 import React from "react";
+import  "./style.css";
 
-import  "./style.css"
+import waterIcon from "./img/water.svg";
+import electroIcon from "./img/electricity.svg";
 
 const Energy = () => {
     return (
-        <div class="energy">
-            <div class="energy__source">
-                <div class="energy__icon">
-                    <img src="./images/electricity.svg"/>
+        <div className="energy">
+            <div className="energy__source">
+                <div className="energy__icon">
+                    <img src={electroIcon} alt="electricity icon" />
                 </div>
-                <div class="energy__consumption">
-                    <div class="energy__description">Elektřina</div>
-                    <div class="energy__value">36.7 kW</div>
+                <div className="energy__consumption">
+                    <div className="energy__description">Elektřina</div>
+                    <div className="energy__value">36.7 kW</div>
                 </div>
             </div>
-            <div class="energy__source">
-                <div class="energy__icon">
-                    <img src="./images/water.svg"/>
+            <div className="energy__source">
+                <div className="energy__icon">
+                    <img src={waterIcon} alt="water icon" />
                 </div>
-                <div class="energy__consumption">
-                    <div class="energy__description">Voda</div>
-                    <div class="energy__value">14.1 m<sup>3</sup></div>
+                <div className="energy__consumption">
+                    <div className="energy__description">Voda</div>
+                    <div className="energy__value">14.1 m<sup>3</sup></div>
                 </div>
             </div>
         </div>

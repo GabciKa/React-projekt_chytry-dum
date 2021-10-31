@@ -1,19 +1,20 @@
 import React from "react";
-
 import  "./style.css"
+import blindsOpen from "./img/blinds-open.svg";
+import blindsClosed from "./img/blinds-closed.svg";
 
 const Blinds = () => {
     return (
-        <div class="blinds">
-            <div class="blinds__icon">
-                <img src="./images/blinds-open.svg"/>
+        <div className="blinds">
+            <div className="blinds__icon">
+                <img src={blindsOpen} alt="blinds state icon" />
             </div>
-            <div class="blinds__name">
+            <div className="blinds__name">
                 Žaluzie
             </div>
-            <div class="blinds__controls">
-                <button class="button button--active">Otevřeno</button>
-                <button class="button">Zavřeno</button>
+            <div className="blinds__controls">
+                <button className="button button--active">Otevřeno</button>
+                <button className="button">Zavřeno</button>
             </div>
         </div>
     )

@@ -1,20 +1,20 @@
 import React from "react";
+import  "./style.css";
+import tempIcon from "./img/temp.svg";
 
-import  "./style.css"
-
-const Climate = () => {
+const Climate = ({climate}) => {
     return (
-        <div class="climate">
-            <div class="climate__icon">
-                <img src="./images/temp.svg"/>
+        <div className="climate">
+            <div className="climate__icon">
+                <img src={tempIcon} alt="temperature icon" />
             </div>
-            <div class="climate__content">
-                <div class="climate__temperature">24&deg;C</div>
-                <div class="climate__humidity">Vlhost vzduchu 51&nbsp;%</div>
+            <div className="climate__content">
+                <div className="climate__temperature">{climate.temperature}&deg;C</div>
+                <div className="climate__humidity">Vlhost vzduchu {climate.humidity}&nbsp;%</div>
             </div>
-            <div class="climate__controls">
-                <button class="button">+</button>
-                <button class="button">-</button>
+            <div className="climate__controls">
+                <button className="button">+</button>
+                <button className="button">-</button>
             </div>
         </div>
     )
